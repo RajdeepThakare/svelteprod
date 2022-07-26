@@ -1,5 +1,5 @@
 /// <reference types="@sveltejs/kit" />
-/// <reference types="@sveltejs/adapter-cloudflare" />
+
 // See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
 // and what to do when importing types
@@ -8,12 +8,7 @@ declare namespace App {
 		userid: string;
 	}
 
-	interface Platform {
-		env?: {
-						YOUR_KV_NAMESPACE: KVNamespace;
-						YOUR_DURABLE_OBJECT_NAMESPACE: DurableObjectNamespace;
-					};
-	}
+	// interface Platform {}
 
 	// interface Session {}
 
