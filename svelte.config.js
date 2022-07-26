@@ -1,6 +1,8 @@
 import vercel from '@sveltejs/adapter-vercel';
 
-
+export async function POST({ request, platform }) {
+	const x = platform.env.YOUR_DURABLE_OBJECT_NAMESPACE.idFromName('x');
+  }
 export default {
 	kit: {
 	  // default options are shown
@@ -23,3 +25,4 @@ export default {
 	} 
 	}
   };
+  
